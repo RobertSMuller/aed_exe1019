@@ -1,15 +1,13 @@
 int* nextLargerNodes(struct ListNode* head, int* returnSize) {
     int valor = 0, tamanho = 0;
     struct ListNode *ptr = head ;
-    struct ListNode *ptr2;
-    
-     ptr=head;
+    struct ListNode *ptr2; 
 
     while(ptr != NULL){
         ptr = ptr->next;
         tamanho++;
     }
-   
+   ptr=head;
     *returnSize = tamanho;
     int *arrey = (int *)malloc(sizeof(int)*tamanho);
     
